@@ -1,0 +1,808 @@
+/* =========================================================
+                    Common CSS Start
+=========================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+
+.transation {
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.main_overly {
+    position: relative;
+    z-index: 1;
+}
+
+.main_overly::after {
+    position: absolute;
+    content: '';
+    background: #47474770;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+:root {
+    --wald: 'Oswald', sans-serif;
+    --sans: 'Open Sans', sans-serif;
+    --hover: #c1272d;
+}
+
+/* =========================================================
+                    Common CSS End
+=========================================================== */
+/* =========================================================
+                    Menu CSS Start
+=========================================================== */
+.main_menu {
+    height: 50px;
+    background: rgb(255, 255, 255);
+    position: fixed;
+    left: 0;
+    top: 30px;
+    width: 100%;
+    z-index: 999;
+}
+
+.main_menu ul li a {
+    font-family: var(--wald);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--hover);
+    line-height: 50px;
+    padding: 0 50px !important;
+    position: relative;
+    
+}
+
+.main_menu ul li a:hover {
+    background:var(--hover);
+    color: #222;
+    border-radius: 50px;
+}
+
+
+.main_menu ul li a:hover:after {
+    width: 100%;
+}
+
+.main_menu .navbar-brand {
+    width: 245px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    background: #ffffff;
+    transform: skewX(-35deg);
+    -webkit-transform: skewX(-35deg);
+    -moz-transform: skewX(-35deg);
+    -ms-transform: skewX(-35deg);
+    -o-transform: skewX(-35deg);
+    border-left: 5px solid #ffffff;
+    border-right: 5px solid #ffffff;
+    position: relative;
+}
+
+.main_menu .navbar-brand img {
+    transform: skewX(35deg);
+    -webkit-transform: skewX(35deg);
+    -moz-transform: skewX(35deg);
+    -ms-transform: skewX(35deg);
+    -o-transform: skewX(35deg);
+    width: 240px;
+    position: absolute;
+    left: -12px;
+    top: -50px;
+}
+
+.main_menu ul li a.active{
+    background: var(--hover);
+    color: #222;
+    border-radius: 50px;
+}
+
+.main_menu ul li a.active:after{
+    width: 100%;
+}
+
+/* =========================================================
+                    Menu CSS End
+=========================================================== */
+/* =========================================================
+                    Banner CSS Start
+=========================================================== */
+.banner_item {
+    padding: 152px 0 156px;
+    position: relative;
+    clip-path: polygon(0% 15%, 0 0, 15% 0%, 85% 0%, 100% 0, 100% 15%, 100% 100%, 79% 93%, 62% 100%, 36% 100%, 17% 92%, 0 99%);
+}
+
+.banner_item::after {
+    background: rgba(0, 0, 0, 0.582);
+}
+
+
+.banner_item .banner_text h2::after {
+    right: -7px;
+    width: 130px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+}
+
+.banner_item .banner_text h2::before {
+    left: -7px;
+    width: 180px;
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+}
+
+
+.banner_item .banner_text .type{
+    font-family: 'Faster One', cursive;
+    font-weight: 400;
+    font-size: 60px;
+    color: var(--hover);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    position: relative;
+    margin: 0;
+    z-index: 9999;
+}
+.banner_item .banner_text h1{
+    font-family: 'Faster One', cursive;
+    font-weight: 700;
+    font-size: 60px;
+    color: var(--hover);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    position: relative;
+}
+.banner_item .banner_text h2{
+    
+    font-weight: 400;
+    font-size: 30px;
+    color: var(--hover);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    position: relative;
+}
+
+
+.banner_item .banner_text h1::after {
+    right: -7px;
+}
+
+.banner_item .banner_text h1::before {
+    left: -7px;
+}
+
+.banner_item .banner_text p {
+    font-family: var(--sans);
+    font-weight: 400;
+    font-size: 13px;
+    color: #ddd;
+    line-height: 18px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    position: relative;
+}
+
+
+
+.banner_item .banner_text p::after {
+    right: -7px;
+    width: 46px;
+}
+
+.banner_item .banner_text p::before {
+    left: -7px;
+    width: 74px;
+}
+
+.banner_item .banner_text a {
+    font-family: var(--wald);
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 14px;
+    border-radius: 50px ;
+    border: 1px solid #ffffff;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    margin: 0 15px;
+}
+
+.banner_item .banner_text a:hover {
+    background: var(--hover);
+    border-color: var(--hover);
+}
+
+.banner_item .banner_text .active {
+    background: var(--hover);
+    border-color: var(--hover);
+}
+
+#banner ul {
+    position: absolute;
+    left: 50%;
+    bottom: 72px;
+    transform: translateX(-50%);
+    display: flex;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+#banner ul li {
+    margin: 0 5px;
+}
+
+#banner ul li button {
+    font-size: 0;
+    width:30px;
+    height:10px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    background: transparent;
+}
+
+#banner ul .slick-active button {
+    width: 50px;
+    height: 10px;
+    background: var(--hover);
+    border-color: var(--hover);
+    z-index: 999;
+}
+
+/* =========================================================
+                    Banner CSS End
+=========================================================== */
+/* =========================================================
+                    About CSS Start
+=========================================================== */
+#about {
+    padding: 80px 0 40px;
+    box-shadow: 0 -144px 700px #222;
+    border-radius:50px  50px 0 0px;
+}
+.banner_ab{
+    position: absolute;
+    left:50%;
+    transform: translate(-50%);
+    top: 0;
+
+}
+.banner_ab h1{
+    font-family: 'Faster One', cursive;
+    font-weight: 700;
+    font-size: 60px;
+    color: var(--hover);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.about_video img{
+    position: relative;
+}
+.about_video {
+    position: relative;
+}
+.about_video .padsite{
+    clip-path: polygon(0% 15%, 0 0, 15% 0%, 85% 0%, 100% 0, 100% 15%, 100% 100%, 79% 93%, 62% 100%, 36% 100%, 17% 92%, 0 99%);
+
+}
+
+.about_video .overly {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #3d303071;
+    clip-path: polygon(0% 15%, 0 0, 15% 0%, 85% 0%, 100% 0, 100% 15%, 100% 100%, 79% 93%, 62% 100%, 36% 100%, 17% 92%, 0 99%);
+
+}
+
+.about_video .overly a {
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #fff;
+    line-height: 48px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    color: #db1a1a;
+}
+
+.common_head {
+    position: relative;
+}
+
+.common_head img {
+    position: absolute;
+    left: 50%;
+    bottom: -14px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.common_head h3 {
+    font-family: var(--wald);
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--hover);
+    text-transform: uppercase;
+}
+
+.about_text p {
+    font-family: var(--sans);
+    font-weight: 400;
+    font-size: 14px;
+    color: #444;
+    line-height: 24px;
+    padding: 0 19px;
+    margin-top: 63px;
+}
+
+.about_text p span {
+    display: block;
+    margin-top: 24px;
+}
+
+/* =========================================================
+                    About CSS End
+=========================================================== */
+/* =========================================================
+                    Gallery CSS Start
+=========================================================== */
+#gellary {
+    padding: 40px 0;
+    
+}
+
+.gal_banner {
+    padding: 30px 0;
+}
+
+.gal_banner::after {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.gal_img {
+    position: relative;
+    clip-path: polygon(0% 15%, 0 0, 15% 0%, 85% 0%, 100% 0, 100% 15%, 100% 100%, 79% 93%, 62% 100%, 36% 100%, 17% 92%, 0 99%);
+}
+
+.gal_img .overly {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: hsla(2, 75%, 55%, 0.5);
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    clip-path: polygon(0% 15%, 0 0, 15% 0%, 85% 0%, 100% 0, 100% 15%, 100% 100%, 79% 93%, 62% 100%, 36% 100%, 17% 92%, 0 99%);
+}
+.gal_img .active {
+    transform: scale(1);
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: hsla(2, 75%, 55%, 0.5);
+    clip-path: polygon(0% 15%, 0 0, 15% 0%, 85% 0%, 100% 0, 100% 15%, 100% 100%, 79% 93%, 62% 100%, 36% 100%, 17% 92%, 0 99%);
+}
+
+.gal_img .overly a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 29px;
+    color: #fff;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.gal_img:hover .overly {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+/* =========================================================
+                    Gallery CSS End
+=========================================================== */
+/* =========================================================
+                    Team CSS Start
+=========================================================== */
+
+/* =========================================================
+                    Textimonial CSS End
+=========================================================== */
+/* =========================================================
+                    Membership CSS Start
+=========================================================== */
+#member {
+    padding: 40px 0;
+    box-shadow: 0 0 700px  #222;
+    border-radius: 50px;
+}
+#member h3{
+    color: #c1272d;
+}
+
+.member_box h2 {
+    padding: 20px 0;
+    background: #ddd;
+    text-transform: uppercase;
+    font-family: var(--wald);
+    font-weight: 700;
+    font-size: 16px;
+    color: #c1272d;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.member_box:hover h2 {
+    background: var(--hover);
+    color: #fff;
+}
+
+.member_box:hover a {
+    background: var(--hover);
+    color: #fff;
+    color: #fff;
+}
+
+
+.member_box .member_img {
+    width:100%;
+    height: 300px;
+}
+
+
+
+.member_box .member_img p {
+    font-family: var(--wald);
+    font-weight: 500;
+    font-size: 50px;
+    color: #fff;
+}
+
+.member_box .member_img p span {
+    font-size: 29px;
+}
+
+.member_box ul {
+    padding: 50px 0 29px;
+    background: #f1f1f1;
+    clip-path: polygon(0 0, 18% 0, 69% 0, 100% 0, 100% 7%, 100% 100%, 79% 93%, 62% 100%, 36% 100%, 17% 92%, 0 99%);
+}
+
+.member_box ul li {
+    padding: 13px 24px 30px;
+    font-family: var(--sans);
+    font-weight: 400;
+    font-size: 14px;
+    color: #444;
+    text-align: justify;
+}
+
+.member_box a {
+    padding: 10px 0;
+    background: #ddd;
+    font-family: var(--wald);
+    font-weight: 400;
+    font-size: 16px;
+    color: #1265c5;
+    text-transform: uppercase;
+    width: 100%;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.mbx{
+    margin-bottom: 19px;
+}
+/* =========================================================
+                    Membership CSS End
+=========================================================== */
+/* =========================================================
+                    CountDown CSS Start
+=========================================================== */
+
+
+/* =========================================================
+                    CountDown CSS End
+=========================================================== */
+
+/* =========================================================
+                    logos CSS Start
+=========================================================== */
+
+#logos{
+    padding: 80px 0;
+}
+
+#logos h3{
+    color: #c1272d;
+}
+
+.logo_part{
+    background: #afafaf;
+    padding: 30px 10px;
+    border-radius: 50px;
+}
+
+.logo_slider .slick-slide{
+    padding: 0 12px;
+}
+
+.logo_part img{
+    height: 40px;
+}
+
+.logo_part:hover {
+    border-color: #dfdfdf;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo_slider .prev,
+.logo_slider .next {
+    position: absolute;
+    width: auto;
+    top: 50%;
+    font-size: 26px;
+    color: #444;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.logo_slider .prev {
+    left: -30px;
+}
+
+.logo_slider .next {
+    right: -30px;
+}
+
+/* =========================================================
+                    logos CSS End
+=========================================================== */
+/* =========================================================
+                    footer CSS Start
+=========================================================== */
+#footer {
+    padding: 30px 0 20px;
+    
+}
+#footer h3{
+    color: #c1272d;
+}
+
+#footer::after {
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.footer_logo img {
+    width: 100%;
+    max-width: 100%;
+    width: 240px;
+    
+}
+.fot_logo{
+    position: relative;
+}
+.fot_logo a img{
+    position: absolute;
+    left: 50%;
+    top: -300%;
+    transform: translate(-50%);
+}
+.footer_logo {
+    position: relative;
+}
+
+.footer_logo::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: -30px;
+    background: #dddddd;
+}
+
+.footer_left_head h4,
+.footer_left2 h4,
+.footer_left3 h4,
+.footer_last h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    font-family: var(--wald);
+    text-transform: uppercase;
+    padding: 36px 0 17px;
+}
+
+
+
+.footer_left3 ul li:nth-child(9),
+.footer_left3 ul li:nth-child(10),
+.footer_left3 ul li:nth-child(11),
+.footer_left3 ul li:last-child {
+    margin-bottom: 0;
+}
+
+.footer_left3 ul li img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.footer_last-col {
+    display: flex;
+    margin-bottom: 10px;
+}
+/* .fot_last{
+    margin-top: 50px;
+    padding: 0;
+} */
+
+.icon2 {
+    margin-right: 10px;
+    color: var(--hover);
+}
+
+.text2 p,
+.text2 a {
+    font-size: 13px;
+    font-weight: 400;
+    color: #dddddd;
+    font-family: var(--sans);
+}
+
+.footer_last h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    font-family: var(--wald);
+    text-transform: uppercase;
+    padding: 10px 0 30px;
+}
+
+
+.footer_last ul {
+    display: flex;
+}
+
+.footer_last ul li a {
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #dddddd;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 10px;
+    transition: all linear .3s;
+
+}
+
+.footer_last ul li a:hover {
+    background: var(--hover);
+    border-color: var(--hover);
+}
+
+
+
+.Copyright p {
+    font-size: 13px;
+    font-weight: 400;
+    color: #ffffff;
+    font-family: var(--sans);
+    padding-top: 40px;
+    position: relative;
+}
+
+.Copyright p a {
+    color: var(--hover);
+}
+
+.Copyright p::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    left: 0;
+    top: 25px;
+    background: #dddddd;
+}
+
+/* =========================================================
+                    footer CSS End
+=========================================================== */
+/* footer form part */
+
+.add h4{
+    font-size: 50px;
+    color: #c1272d;
+}
+
+
+form label {
+    color: #c1272d;
+    font-weight: 700;
+}
+/* footer form part */

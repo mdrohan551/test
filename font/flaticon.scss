@@ -1,0 +1,69 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?731c26fe755ea5ec4e7db40aafc7df74") format("truetype"),
+url("./flaticon.woff?731c26fe755ea5ec4e7db40aafc7df74") format("woff"),
+url("./flaticon.woff2?731c26fe755ea5ec4e7db40aafc7df74") format("woff2"),
+url("./flaticon.eot?731c26fe755ea5ec4e7db40aafc7df74#iefix") format("embedded-opentype"),
+url("./flaticon.svg?731c26fe755ea5ec4e7db40aafc7df74#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "weightlifting": "\f101",
+    "exercise": "\f102",
+    "buddhist-yoga-pose": "\f103",
+    "boxing-fighter": "\f104",
+    "exercise-with-dumbbell": "\f105",
+    "man-exercising-on-the-floor": "\f106",
+    "pull-up": "\f107",
+    "weightlifting-1": "\f108",
+    "jumping-rope": "\f109",
+    "stretching-silhouette": "\f10a",
+    "yoga": "\f10b",
+);
+
+.flaticon-weightlifting:before {
+    content: map-get($flaticon-map, "weightlifting");
+}
+.flaticon-exercise:before {
+    content: map-get($flaticon-map, "exercise");
+}
+.flaticon-buddhist-yoga-pose:before {
+    content: map-get($flaticon-map, "buddhist-yoga-pose");
+}
+.flaticon-boxing-fighter:before {
+    content: map-get($flaticon-map, "boxing-fighter");
+}
+.flaticon-exercise-with-dumbbell:before {
+    content: map-get($flaticon-map, "exercise-with-dumbbell");
+}
+.flaticon-man-exercising-on-the-floor:before {
+    content: map-get($flaticon-map, "man-exercising-on-the-floor");
+}
+.flaticon-pull-up:before {
+    content: map-get($flaticon-map, "pull-up");
+}
+.flaticon-weightlifting-1:before {
+    content: map-get($flaticon-map, "weightlifting-1");
+}
+.flaticon-jumping-rope:before {
+    content: map-get($flaticon-map, "jumping-rope");
+}
+.flaticon-stretching-silhouette:before {
+    content: map-get($flaticon-map, "stretching-silhouette");
+}
+.flaticon-yoga:before {
+    content: map-get($flaticon-map, "yoga");
+}
